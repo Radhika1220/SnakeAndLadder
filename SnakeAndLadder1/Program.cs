@@ -10,6 +10,7 @@ namespace SnakeAndLadder1
         ///UC3-Checking Options
         /// UC4-Repeat till position reached 100
         /// UC5-Stop at 100 position
+        /// UC6-Finding out the number of times dice rolled
         /// </summary>
 
         //Declaring Constant variables
@@ -30,13 +31,13 @@ namespace SnakeAndLadder1
 
             return rollDice;
         }
-
+      
         public static void CheckingOptions()
         {
             Random r = new Random();
 
             int playerPosition = 0;
-
+            int noOfDiceRolled = 0;
             while (playerPosition <= SIZE)
             {
                 int check = r.Next(1, 4);
@@ -78,7 +79,9 @@ namespace SnakeAndLadder1
                 {
                     break;
                 }
+                noOfDiceRolled++;
             }
+            Console.WriteLine("Number of times dice rolled : " + noOfDiceRolled);
         }
     }
 }
