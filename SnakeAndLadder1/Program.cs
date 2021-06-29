@@ -8,5 +8,9 @@ namespace SnakeAndLadder1
         {
             Console.WriteLine("Welcome to Snake And Ladder Problem!");
         }
+        public static void PlayerPosition()
+        {
+            int playerPosition = 0;
+        }
     }
 }
