@@ -7,10 +7,15 @@ namespace SnakeAndLadder1
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Snake And Ladder Problem!");
+            Program.RollDice();
         }
-        public static void PlayerPosition()
+        public static void RollDice()
         {
-            int playerPosition = 0;
+            Random random = new Random();
+            int rollDice = random.Next(1, 7);
+            Console.WriteLine("Dice number : " + rollDice);
+
+
         }
     }
 }
